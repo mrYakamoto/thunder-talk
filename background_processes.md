@@ -31,21 +31,21 @@
 
   - the pool size limit in the database config file defaults to 5. You should bump this up to 25 which is the most jobs sidekiq will run at the same time.
 
-## -'bundle exec sidekiq' in the terminal to start sidekiq running
+## 'bundle exec sidekiq' in the terminal to start sidekiq running
 
 
 there are cool features documented in the wiki.
-##-you can schedule time for a job to be performed, like clearing a cache for example
-##-you can prioritize queues that will make sure certain methods are executed first
+## you can schedule time for a job to be performed, like clearing a cache for example
+## you can prioritize queues that will make sure certain methods are executed first
 
-##-you can include a sinatra browser interface with sidekiq
+## you can include a sinatra browser interface with sidekiq
   -call 'mount Sidekiq::Web, at '/sidekiq' in the routes
   -require 'sidekiq/web' at the top of routes
   -include 'sinatra', require: false in Gemfile
   -include 'slim' in Gemfile
   -you should password protect this page in production.
 
-##-Sidekiq uses 'Celluloid' for its multithread concurrency. Check out 'Celluloid'
+## Sidekiq uses 'Celluloid' for its multithread concurrency. Check out 'Celluloid'
 
 
 ![sidekiq code example#](http://s21.postimg.org/50szwdsnb/Screen_Shot_2016_01_23_at_8_38_47_PM.png)
