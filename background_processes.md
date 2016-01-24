@@ -1,6 +1,6 @@
 # Sidekiq gem
 
-*gem for moving  a long running job into a background process.
+* gem for moving  a long running job into a background process.
 
 ## handles multiple jobs concurrently using threads
 
